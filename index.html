@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simba Geti — Portfolio</title>
+  <meta name="description" content="Professional portfolio of Your Name: developer, designer, and problem-solver." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">SIMBA GETI<span>.</span></a>
+      <button class="nav__toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu" id="nav-menu" role="navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link active" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#education">Education</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="section hero" id="home" aria-label="Hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Hello! I’m</p>
+        <h1 class="hero__title">SIMBA GETI</h1>
+        <p class="hero__subtitle"><span id="typewriter"></span></p>
+        <p class="hero__desc">
+          I craft fast, accessible, and delightful web experiences. I love solving complex problems with elegant code and clean design.
+        </p>
+        <div class="hero__actions">
+          <a href="Simple Professional CV Resume.pdf" download class="btn btn--primary">Download CV</a>
+          <a href="Simple Professional CV Resume.pdf" target="_blank" class="btn btn--ghost">View CV</a>
+        </div>
+        <div class="hero__meta">
+          <a href="#projects" class="chip">Available for work</a>
+          <a href="#contact" class="chip">Based in Kampala</a>
+        </div>
+      </div>
+      <div class="hero__image-wrap">
+        <!-- Replace src with your own profile photo -->
+       <a href="simba.jpg" target="_blank" ><img class="hero__image" src="simba.jpg"  alt="Portrait of Simba Geti"/></a> 
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to About">↓</a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about" aria-label="About">
+    <div class="container narrow">
+      <h2 class="section__title">About Me</h2>
+      <p class="lead">
+        I’m a full-stack web developer focused on impact and outcomes. I translate user needs into robust, scalable systems and pixel-perfect interfaces. I care deeply about accessibility, performance, and developer experience.
+      </p>
+      <ul class="about__highlights">
+        <li>Building web apps</li>
+        <li>Core stack: HTML, CSS, JavaScript, React, Node</li>
+        <li>Strong UX instincts & eye for detail</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills" aria-label="Skills">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills__grid">
+        <div class="skill">
+          <div class="skill__top"><span>HTML</span><span class="skill__val">95%</span></div>
+          <div class="skill__bar"><span data-percent="95"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill__top"><span>CSS</span><span class="skill__val">92%</span></div>
+          <div class="skill__bar"><span data-percent="92"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill__top"><span>JavaScript</span><span class="skill__val">88%</span></div>
+          <div class="skill__bar"><span data-percent="88"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill__top"><span>Vue.JS</span><span class="skill__val">10%</span></div>
+          <div class="skill__bar"><span data-percent="10"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill__top"><span>Node.js</span><span class="skill__val">10%</span></div>
+          <div class="skill__bar"><span data-percent="10"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill__top"><span>UI/UX</span><span class="skill__val">82%</span></div>
+          <div class="skill__bar"><span data-percent="82"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill__top"><span>Figma</span><span class="skill__val">75%</span></div>
+          <div class="skill__bar"><span data-percent="75"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Projects</h2>
+        <div class="filters">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ui">UI</button>
+          <button class="filter" data-filter="tools">Tools</button>
+        </div>
+      </div>
+
+      <div class="projects__grid">
+        <article class="card mix web">
+          <img src="portfolio.jpg" alt="Portfolio website screenshot"/>
+          <div class="card__body">
+            <h3>Portfolio Website</h3>
+            <p>Modern one-page portfolio with animations, scrollspy, and performance optimizations.</p>
+            <div class="card__actions">
+              <a href="https://simbageti-hub.github.io/MWF/" target="_blank" class="btn btn--sm">View Project</a>
+              <a href="https://github.com/SimbaGeti-hub/MWF.git" target="_blank" class="btn btn--ghost btn--sm">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card mix tools">
+          <img src="activewear.jpg" alt="Task manager app UI"/>
+          <div class="card__body">
+            <h3>Simba activewear</h3>
+            <p>Feature-rich tasks app with reminders, drag & drop, and offline sync.</p>
+            <div class="card__actions">
+              <a href="https://simbageti-hub.github.io/ASSIGNMENT1/" target="_blank" class="btn btn--sm">View project</a>
+              <a href="https://github.com/SimbaGeti-hub/ASSIGNMENT1.git" target="_blank" class="btn btn--ghost btn--sm">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card mix ui">
+          <img src="mayondo.jpg" alt="Dashboard design"/>
+          <div class="card__body">
+            <h3>MWF Dashboard</h3>
+            <p>Responsive dashboard with charts, theming, and accessibility baked in.</p>
+            <div class="card__actions">
+              <a href="https://simbageti-hub.github.io/MWF/" target="_blank" class="btn btn--sm">View project</a>
+              <a href="https://github.com/SimbaGeti-hub/MWF.git" target="_blank" class="btn btn--ghost btn--sm">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card mix web">
+          <img src="sales.jpg" alt="Ecommerce storefront"/>
+          <div class="card__body">
+            <h3>MWF E-commerce Storefront</h3>
+            <p>Fast storefront with cart, checkout, and search; Core Web Vitals.</p>
+            <div class="card__actions">
+              <a href="https://simbageti-hub.github.io/MWF/" target="_blank" class="btn btn--sm">View Project</a>
+              <a href="https://github.com/SimbaGeti-hub/MWF.git" target="_blank" class="btn btn--ghost btn--sm">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience" aria-label="Experience">
+    <div class="container narrow">
+      <h2 class="section__title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Fullstack Developer </h3>
+            <p class="muted">2023 — Present · Remote & Freelance</p>
+            <ul>
+              <li> Developing responsive, user-friendly websites. 
+Skilled in Adobe Creative Suite, HTML, CSS and JavaScript. 
+Experienced in managing projects independently, from concept to 
+delivery, ensuring client satisfaction through innovative and impactful 
+digital solutions.</li>
+              <!-- <li>Built component library with accessibility and dark mode.</li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Graphic Design</h3>
+            <p class="muted">2023 — present · Remote & Freelance </p>
+            <ul>
+              <li>Creative and 
+                results-driven professional with expertise in designing visuallycompelling graphics </li>
+              <!-- <li>Cut page load time from 3.2s to 1.1s.</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education" aria-label="Education">
+    <div class="container narrow">
+      <h2 class="section__title">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Software engineering(JavaScript) — Refactory Academy</h3>
+            <p class="muted">July 2025 — up to date</p>
+            <p>Focused on software engineering, algorithms, and HCI.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Advanced Computer Training  — Netlabs!UG Makerere University </h3>
+            <p class="muted">Jan 2023 — Sept 2023</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Uganda Certificate of Mikrotic (MTCNA) — Netlabs!UG Makerere University </h3>
+            <p class="muted">Jan 2023 — Sept 2023</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Uganda Certificate of Education  — Uganda martyrs High school Rubaga </h3>
+            <p class="muted">2018 — 2022</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3>Primary Leaving Examination  — Uganda Martyrs Primary School </h3>
+            <p class="muted">2011 — 2017</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-label="Contact">
+    <div class="container narrow">
+      <h2 class="section__title">Contact</h2>
+      <form id="contactForm" class="form" action="https://formspree.io/f/xzzvqpap" method="POST" novalidate>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required />
+            <small class="error"></small>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@gmail.com" required />
+            <small class="error"></small>
+          </div>
+        </div>
+        <div class="form__field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+
+      <!-- <form id="contactForm" class="form" action="https://formspree.io/f/mvgqnpqr" method="POST">
+  <div class="form__row">
+    <div class="form__field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your Name" required />
+      <small class="error"></small>
+    </div>
+    <div class="form__field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      <small class="error"></small>
+    </div>
+  </div>
+  <div class="form__field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    <small class="error"></small>
+  </div>
+  <button type="submit" class="btn btn--primary">Send Message</button>
+</form> -->
+
+    </div>
+  </section>
+
+  <!-- here -->
+
+ 
+
+  <section id="contact-info" class="section">
+  <div class="container">
+    <h2 class="section__title">Contact Information</h2>
+    <p class="section__subtitle">Let’s connect! Here’s how you can reach me.</p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>Janetjorom02@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>+256 767418618</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Kampala, Uganda</span>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/simba-geti-73784b2aa/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/SimbaGeti-hub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/3" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- here -->
+
+  <!-- <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button> -->
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Simba Geti. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
