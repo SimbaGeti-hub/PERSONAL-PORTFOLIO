@@ -26,7 +26,7 @@ body{
 .narrow{width:min(820px, 92vw); margin-inline:auto}
 
 /* Header */
-.header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:linear-gradient(180deg, rgba(11,11,15,.85), rgba(11,11,15,.35) 60%, rgba(11,11,15,0))}
+.header{position:fixed; top:0; left: 0; width: 100%; z-index:1000; backdrop-filter: saturate(180%) blur(8px); backdrop-filter:saturate(180%) blur(8px); background:linear-gradient(180deg, rgba(11,11,15,.85), rgba(11,11,15,.35) 60%, rgba(11,11,15,0))}
 .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
 .nav__logo{font-weight:800; letter-spacing:.5px; color:var(--text); text-decoration:none}
 .nav__logo span{color:var(--accent)}
@@ -37,6 +37,7 @@ body{
 .nav__link.active{color:var(--text); background:var(--surface-2); box-shadow:0 0 0 3px var(--ring) inset}
 .nav__toggle{display:none; background:none; border:0; cursor:pointer}
 .nav__toggle span{display:block; width:22px; height:2px; background:var(--text); margin:5px 0; transition:.2s}
+
 
 /* Hero */
 .section{padding:84px 0}
